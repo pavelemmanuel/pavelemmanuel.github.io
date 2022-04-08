@@ -17,6 +17,7 @@
     <script src="jquery.js"></script>
     <script src="underscore.js"></script>
     <script src="doctools.js"></script>
+    <script src="wordcloud2.js"></script>
 
     <link rel="stylesheet" id="sphinx-library-type" href="type-book.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
@@ -63,7 +64,7 @@
                 <li><a class="reference internal" href="#about">1 About</a></li>
                 <li><a class="reference internal" href="#portfolio">2 Portfolio</a>
                     <ul>
-                        <li class="nested1"><a class="reference internal" href="#python-tutorials">2.1 Ticket</a></li>
+                        <li class="nested1"><a class="reference internal" href="#jours-de-joie">2.1 Ticket</a></li>
                         <li class="nested1"><a class="reference internal" href="#python-books">2.2 OnConnect</a></li>
                         <li class="nested1"><a class="reference internal" href="#python-s-official-documentation">2.3 Jours de joie</a></li>
                     </ul>
@@ -92,13 +93,18 @@
 
                 <div class="section" id="emmaneuel-koua">
                     <h1>Emmanuel KOUA<a class="headerlink" href="#emmanuel-koua" title="Permalink to this headline">¶</a></h1>
-                    <p><em>Code, Words, People</em></p>
+                    <p><em>DevOps, Code , People</em></p>
                     <div class="toctree-wrapper compound">
                     </div>
                     <div class="section" id="about">
                         <h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
-                        <p>I love working in <strong>developer education</strong> because I like code, words, and people.</p>
-                        <p>I spend my time:</p>
+                        <p>Being passionate about application development and system administration, I was hesitant to choose one of its two branches for my specialization until the beginning of my master's when I discovered the profession of DevOps. I saw
+                            there the way to live my two passions. Curious to know more about this job, I became interested in automation, integration and testing. As far as Cloud services are concerned, I was able to acquire some great knowledge during
+                            my career..
+                        </p>
+                        <div style="width: 50%;height:200px;margin: auto;" id="word_cloud">a</div>
+                        <!-- <p>I love working in <strong>developer education</strong> because I like code, words, and people.</p> -->
+                        <!-- <p>I spend my time:</p>
                         <ul class="simple">
                             <li>
                                 <p>Using my <strong>programming</strong> knowledge and <strong>writing</strong> skills to be a bridge between developers and learners</p>
@@ -109,63 +115,98 @@
                             <li>
                                 <p><strong>Training</strong> my team members so that they can excel at their current projects and take on new ones</p>
                             </li>
-                        </ul>
-                        <p>Let’s help developers together.</p>
+                        </ul> -->
+                        <p>Let’s Start Automation together.</p>
                     </div>
                     <div class="section" id="portfolio">
                         <h2>Portfolio<a class="headerlink" href="#portfolio" title="Permalink to this headline">¶</a></h2>
-                        <div class="section" id="python-tutorials">
-                            <h3>Python Tutorials<a class="headerlink" href="#python-tutorials" title="Permalink to this headline">¶</a></h3>
-                            <p>As the Executive Editor of <a class="reference external" href="https://realpython.com/">Real Python</a>, I have planned, written, reviewed, edited, and published <strong>over 300 tutorials</strong> about the Python programming
-                                language. Check out my <a class="reference external" href="https://realpython.com/team/jjablonski/">profile at Real Python</a> to learn more.</p>
-                            <p>I’ve also worked with subject matter experts to:</p>
+                        <p>I’ve worked on several projects:</p>
+                        <div class="section" id="jours-de-joie">
+                            <h3>Jours de joie<a class="headerlink" href="#jours-de-joie" title="Permalink to this headline">¶</a></h3>
+                            <p>As a FullStack WEB developper Intern at <a class="reference external" href="https://paraclet-ci.com/">Paraclet SARL</a>, I have worked on the creation of a
+                                <strong>digital wedding planner</strong> in Côte D 'ivoire. Check out my achievement at
+                                <a class="reference external" href="https://joursdejoie.com">Jours de joie </a> to learn more.</p>
+                            <a href="https://joursdejoie.com"><img src="assets/imgs/jdj.png" alt="JDJ Image"></a>
+                            <p> <strong>Technologies:</strong> VueJS, VueX, NuxtJS, PHP, Laravel, Lumen, ExpressJS, GitLab, Trello, Électron, Socket Io, Jest, PHP Unit, SOAP, JSON, Rest API</p>
+                            <p><strong> Missions: </strong> </p>
                             <ul class="simple">
                                 <li>
-                                    <p>Design <strong>learning paths</strong> that help learners progress in a way that is structured and effective</p>
+                                    <p>Analysis, design, integration and maintenance of a digital wedding planner</p>
                                 </li>
                                 <li>
-                                    <p>Plan our wider <strong>curriculum</strong> to make sure that it meets the varied needs of learners</p>
+                                    <p>Implementation of a real-time chat application</p>
+                                </li>
+                                <li>
+                                    <p>Integration of third-party APIs (stock market, SMS, Facebook, WhatsApp, Twilio, VISA MASTERCARD, Mobile Money, ...)</p>
+                                </li>
+                                <li>
+                                    <p>Implementation of software architecture</p>
+                                </li>
+                                <li>
+                                    <p>Participation in the realization of the specifications</p>
+                                </li>
+                                <li>
+                                    <p>API Realization and Documentation</p>
+                                </li>
+                                <li>
+                                    <p>Implementation of Unit Test</p>
                                 </li>
                             </ul>
                         </div>
-                        <div class="section" id="python-books">
-                            <h3>Python Books<a class="headerlink" href="#python-books" title="Permalink to this headline">¶</a></h3>
-                            <p>As the Executive Editor of Real Python, I’ve worked on books that have made a big impact on both <strong>beginner</strong> and <strong>advanced</strong> Pythonistas:</p>
-                            <div class="section" id="id1">
-                                <h4><a class="reference external" href="https://realpython.com/products/python-basics-book/">Python Basics: A Practical Introduction to Python 3</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
-                                <p>I co-authored this book and did project management as I took it through the publishing process.</p>
-                                <p>The first half is a quick but thorough overview of all the Python fundamentals. You don’t need any prior experience with programming to get started, and we’ll teach you everything you need to know, step-by-step.</p>
-                                <p>The second half focuses on solving interesting, real-world problems with Python. Once you have the fundamentals down, you’ll progress quickly by following along with our hands-on coding exercises and projects.</p>
-                            </div>
-                            <div class="section" id="id2">
-                                <h4><a class="reference external" href="https://realpython.com/products/cpython-internals-book/">CPython Internals: Your Guide to the Python 3 Interpreter</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
-                                <p>I was one of two reviewers for this book aimed at advanced Pythonistas. I also did project management and took it through the publishing process.</p>
-                                <p>With this book, you’ll cover the critical concepts behind the internals of CPython and see how they work with visual explanations and hands-on exercises.</p>
-                                <p>Each page in this book has been carefully laid out with beautiful typography, syntax highlighting for code examples, and instructional illustrations so you can process and memorize the information effectively.</p>
-                            </div>
+                        <div class="section" id="ticket">
+                            <h3>Appointment Booking System<a class="headerlink" href="#ticket" title="Permalink to this headline">¶</a></h3>
+                            <p>As a FullStack WEB developper I have worked on the creation of an
+                                <strong>Appointment Booking System </strong> in Côte D 'ivoire.
+                                <img src="assets/imgs/rdv.png" alt="JDJ Image">
+                                <p> <strong>Technologies:</strong> VueJS, VueX, Quasar, PHP, Laravel, GitLab, Socket Io, Jest, PHP Unit, SOAP, JSON, Rest API</p>
+                                <p><strong> Missions: </strong> </p>
+                                <ul class="simple">
+                                    <li>
+                                        <p>Analysis, design, integration and maintenance of an Appointment Booking System</p>
+                                    </li>
+                                    <li>
+                                        <p>Implementation of software architecture</p>
+                                    </li>
+                                    <li>
+                                        <p>Participation in the realization of the specifications</p>
+                                    </li>
+                                    <li>
+                                        <p>API Realization and Documentation</p>
+                                    </li>
+                                    <li>
+                                        <p>Implementation of Unit Test</p>
+                                    </li>
+                                </ul>
                         </div>
-                        <div class="section" id="python-s-official-documentation">
-                            <h3>Python’s Official Documentation<a class="headerlink" href="#python-s-official-documentation" title="Permalink to this headline">¶</a></h3>
-                            <p><strong>Documentation is important.</strong> If your documentation is the first point of contact that potential users have with your project, then it has a big job to do. It needs to:</p>
-                            <ul class="simple">
-                                <li>
-                                    <p>Make learning easy for your users</p>
-                                </li>
-                                <li>
-                                    <p>Pitch your product</p>
-                                </li>
-                                <li>
-                                    <p>Build trust</p>
-                                </li>
-                            </ul>
-                            <p>I want documentation in open source to be better, and I love the Python community, so I'm on the <strong>editorial board</strong> for Python's official documentation. I’ve learned a lot in the process, and it’s gotten me into
-                                using <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a>, which I used to make this page before I customized it with JavaScript, HTML, and CSS.</p>
+                        <div class="section" id="connect">
+                            <h3>Uber like web application<a class="headerlink" href="#connect" title="Permalink to this headline">¶</a></h3>
+                            <p>As a FullStack WEB developper I have worked on the creation of an
+                                <strong>Appointment Booking System </strong> in Côte D 'ivoire.
+                                <img src="assets/imgs/rdv.png" alt="JDJ Image">
+                                <p> <strong>Technologies:</strong> VueJS, VueX, Quasar, PHP, Laravel, GitLab, Socket Io, Jest, PHP Unit, SOAP, JSON, Rest API</p>
+                                <p><strong> Missions: </strong> </p>
+                                <ul class="simple">
+                                    <li>
+                                        <p>Analysis, design, integration and maintenance of an Appointment Booking System</p>
+                                    </li>
+                                    <li>
+                                        <p>Implementation of software architecture</p>
+                                    </li>
+                                    <li>
+                                        <p>Participation in the realization of the specifications</p>
+                                    </li>
+                                    <li>
+                                        <p>API Realization and Documentation</p>
+                                    </li>
+                                    <li>
+                                        <p>Implementation of Unit Test</p>
+                                    </li>
+                                </ul>
                         </div>
-                        <div class="section" id="python-language-summit">
-                            <h3>Python Language Summit<a class="headerlink" href="#python-language-summit" title="Permalink to this headline">¶</a></h3>
-                            <p>Every year, a small group of core developers from Python implementations such as CPython, PyPy, Jython, and more come together to share information, discuss problems, and seek consensus in order to help Python continue to flourish.</p>
-                            <p>The Python Language Summit features short presentations followed by group discussions. The topics can relate to the language itself, the standard library, the development process, documentation, packaging, and more!</p>
-                            <p>Because this is a closed event, the Python Software Foundation contracted me to attend as a <strong>technical journalist</strong> and write a <a class="reference external" href="https://pyfound.blogspot.com/2021/05/the-2021-python-language-summit.html">series of articles</a>                                about all of the presentations that were given so that the wider Python community can stay more closely involved in the future of the language.</p>
+                        <div class="section" id="photo">
+                            <h3>Microservices Base App Developpment/Integration <a class="headerlink" href="#photo" title="Permalink to this headline">¶</a></h3>
+                            <p>As a DevOps Engineer, I was responsible of the development, the implementation of a CI/CD Pipeline and the deployment of a Photo Sharing App in a Cloud Environment</p>
+                            <p> <strong>Technologies:</strong> Python, Flask, Rest API, Grpc, Gitlab CI/CD, KeyStone, Elastic Search, Gravitee, Kubernetes, Ansible, OpenStack, HaProxy , PyTest</p>
                         </div>
                     </div>
                     <div class="section" id="education">
@@ -237,10 +278,39 @@
         <div class="clear"></div>
     </div>
     <footer class="footer" role="contentinfo">
-        &copy; Copyright 2021, Joanna Jablonski. Created using <a href="http://sphinx-doc.org/">Sphinx</a> with
+        &copy; Copyright 2021, Emmanuel KOUA. Created using <a href="http://sphinx-doc.org/">Sphinx</a> with
         <a href="https://github.com/vsalvino/sphinx-library">Library</a> theme.
 
     </footer>
+    <script>
+        (function() {
+            list = [
+                    ['DevoPS', 40],
+                    ['Developper', 40],
+                    ['Web', 20],
+                    ['Kubernetes', 20],
+                    ['Django', 20],
+                    ['Openstack', 20],
+                    ['Ansible', 6],
+                    ['JUnit', 6],
+                    ['VueJS', 6],
+                    ['Laravel', 6],
+                    ['Developper', 6],
+                    ['Lumen', 6],
+                    ['Gitla CI/CD', 6],
+                    ['Terraform', 6],
+                    ['JTest', 6],
+                    ['electron', 6],
+                    ['Socket IO', 6],
+                    ['PHP Unit', 6]
+                ]
+                // your page initialization code here
+                // the DOM will be available here
+            WordCloud(document.getElementById('word_cloud'), {
+                list: list
+            });
+        })();
+    </script>
 </body>
 
 <!-- Mirrored from jablonskidev.github.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Apr 2022 23:26:12 GMT -->
